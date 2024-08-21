@@ -1,0 +1,73 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    overflow-x: hidden; /* Para evitar scroll horizontal en animaciones */
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+header, footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hidden-section {
+    position: relative;
+}
+
+.hidden-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.hidden-section:hover .hidden-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+.animate__fadeInDown {
+    animation: fadeInDown 2s;
+}
+
+.animate__fadeInUp {
+    animation: fadeInUp 2s;
+}
+
+.animate__fadeInLeft {
+    animation: fadeInLeft 2s;
+}
+
+.animate__fadeInRight {
+    animation: fadeInRight 2s;
+}
+
+.animate__zoomIn {
+    animation: zoomIn 2s;
+}
+
+.animate__pulse {
+    animation: pulse 1s infinite;
+}

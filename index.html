@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="container text-center my-5">
+        <h1 class="animate__fadeInDown">Tu Nombre</h1>
+        <p class="animate__fadeInUp">Breve descripción personal.</p>
+    </header>
+
+    <section id="habilidades" class="container my-5 hidden-section">
+        <h2 class="animate__fadeInLeft">Habilidades</h2>
+        <ul class="hidden-content">
+            <li class="animate__fadeInRight">Habilidad 1</li>
+            <li class="animate__fadeInRight">Habilidad 2</li>
+            <li class="animate__fadeInRight">Habilidad 3</li>
+        </ul>
+    </section>
+
+    <section id="proyectos" class="container my-5 hidden-section">
+        <h2 class="animate__fadeInLeft">Proyectos</h2>
+        <div class="row hidden-content">
+            <div class="col-md-4 animate__zoomIn">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto.</p>
+            </div>
+            <div class="col-md-4 animate__zoomIn">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto.</p>
+            </div>
+            <div class="col-md-4 animate__zoomIn">
+                <h3>Proyecto 3</h3>
+                <p>Descripción del proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container my-5">
+        <h2 class="animate__fadeInLeft">Contacto</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control animate__fadeInRight" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control animate__fadeInRight" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control animate__fadeInRight" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary animate__pulse">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="container text-center my-5">
+        <p class="animate__fadeIn">&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
