@@ -7,7 +7,7 @@ body {
     overflow-x: hidden; /* Para evitar scroll horizontal en animaciones */
 }
 
-h1, h2 {
+h1, h2, .card-title{
     color: #fcd036;
 }
 
@@ -30,6 +30,10 @@ section {
 form {
     max-width: 600px;
     margin: 0 auto;
+}
+
+.card-body{
+    background-color: #f6f5da ;
 }
 
 .hidden-section {
