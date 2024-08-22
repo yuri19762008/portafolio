@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Personal</title>
+    <script src="https://kit.fontawesome.com/3bf76086f6.js" crossorigin="anonymous"></script>
     <!--link bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -15,46 +16,109 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <header class="container text-center my-5">
-      <h1 class="animate__fadeInDown">YURI OCTAVIO URZUA LEBUY</h1>
-      <p class="animate__fadeInUp">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis facilis
-        assumenda, maiores quas, saepe rem eligendi aspernatur atque neque ipsa
-        aut tempore magni, ratione asperiores quod maxime minima! Error, sint.
-      </p>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Mi Portafolio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobreMi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <section id="habilidades" class="container my-5 hidden-section">
-      <h2 class="animate__fadeInLeft">Habilidades Personales</h2>
-      <ul class="hidden-content">
-        <li class="animate__fadeInRight">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quo
-          minima mollitia iure asperiores amet qui placeat, eaque voluptatem
-          accusantium, architecto laboriosam, deserunt beatae ut aut? Dolorum,
-          et quo. Dignissimos.
-        </li>
-        <li class="animate__fadeInRight">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis
-          quisquam excepturi ex repudiandae totam, animi repellat nisi
-          provident, iusto facere consequatur possimus, architecto officia
-          cumque quae ipsum eveniet velit?
-        </li>
-        <li class="animate__fadeInRight">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quod
-          quibusdam vitae, blanditiis hic doloribus molestiae sequi expedita
-          fuga nam inventore nulla eveniet quisquam totam repellendus
-          accusantium maxime vero eaque.
-        </li>
-      </ul>
+    <section id="home" class="container my-5 text-center">
+      <div class="container">
+        <h1 class="display-4">Bienvenido a Mi Portafolio</h1>
+        <p class="lead">Desarrollador Web Creativo y Apasionado</p>
+      </div>
+    </section>
+
+    <section id="sobreMi" class="container my-5">
+      <h2 class="text-center mb-4">Sobre Mí</h2>
+      <div class="row">
+        <div class="col-md-5">
+          <img
+            src="assets/img/foto camara.jpg"
+            alt="Mi foto"
+            class="img-fluid rounded-5"
+          />
+        </div>
+        <div class="col-md-6">
+          <p>
+            Soy un desarrollador web apasionado por crear experiencias digitales
+            únicas y funcionales. Con experiencia en HTML, CSS, JavaScript y
+            frameworks modernos, me esfuerzo por combinar diseño atractivo con
+            código limpio y eficiente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="habilidades" class="container my-2 ">
+      <h2 class="animate__fadeInLeft">Habilidades Especificas</h2>
+      <div class="row m-5" >
+        <div class="col-md-3 col-sm-6 skill-item" data-skill="HTML5">
+          <i class="fab fa-html5 fa-5x" style="color: #ffd43b"></i>
+            
+            <h3>HTML5</h3>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-item" data-skill="CSS3">
+            <i class="fab fa-css3-alt fa-5x" style="color: #ffd43b"></i>
+            
+            <h3>CSS3</h3>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-item" data-skill="JavaScript">
+            <i class="fab fa-js-square fa-5x" style="color: #ffd43b"></i>
+            <h3>JavaScript</h3>
+        </div>
+        <div class="col-md-3 col-sm-6 skill-item" data-skill="Bootstrap">
+            <i class="fab fa-bootstrap fa-5x" style="color: #ffd43b"></i>
+            <h3>Bootstrap</h3>
+        </div>
+    </div>
     </section>
 
     <!--tarjetas-->
-    <section class="container hidden-section">
-      <h2 class="animate__fadeInLeft">Habilidades Personales</h2>
+    <section id="projectos" class="container hidden-section">
+      <h2 class="animate__fadeInLeft">Projectos personales</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="assets/img/foto camara.jpg" class="card-img-top" alt="..." />
+            <img
+              src="assets/img/foto camara.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title animate__fadeInLeft">Card title</h5>
               <p class="card-text">
