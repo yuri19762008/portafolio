@@ -1,7 +1,7 @@
 document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault();
   alert("Formulario enviado correctamente");
-  // Aquí puedes añadir la lógica para enviar el formulario por AJAX
+  // Este formulario puede derivar a otro sitio 
 });
 document.querySelectorAll(".hidden-section").forEach(function (section) {
   section.addEventListener("mouseover", function () {

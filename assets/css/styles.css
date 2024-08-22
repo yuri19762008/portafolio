@@ -1,7 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     background-color: wheat;
     color: #343a40;
     overflow-x: hidden; /* Para evitar scroll horizontal en animaciones */
