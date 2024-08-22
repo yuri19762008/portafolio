@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Personal</title>
-    <script src="https://kit.fontawesome.com/3bf76086f6.js" crossorigin="anonymous"></script>
+    <!--link favicom-->
+    <script
+      src="https://kit.fontawesome.com/3bf76086f6.js"
+      crossorigin="anonymous"
+    ></script>
     <!--link bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -16,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <!--NAVBAR-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -53,25 +58,25 @@
         </div>
       </nav>
     </header>
-
+    <!--ENCABEZADO-->
     <section id="home" class="container my-5 text-center">
       <div class="container">
-        <h1 class="display-4">Bienvenido a Mi Portafolio</h1>
+        <h1 class="animate__fadeInRight display-4">Bienvenido a Mi Portafolio</h1>
         <p class="lead">Desarrollador Web Creativo y Apasionado</p>
       </div>
     </section>
-
-    <section id="sobreMi" class="container my-5">
-      <h2 class="text-center mb-4">Sobre Mí</h2>
+    <!--ABOUT ME-->
+    <section id="sobreMi" class="container">
+      <h2 class="animate__fadeInLeft text-center mb-4">Sobre Mí</h2>
       <div class="row">
         <div class="col-md-5">
           <img
             src="assets/img/foto camara.jpg"
             alt="Mi foto"
-            class="img-fluid rounded-5"
+            class="img-fluid rounded-5 shadow p-3 mb-5 animate__zoomIn"
           />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-7 p-4 animate__zoomIn">
           <p>
             Soy un desarrollador web apasionado por crear experiencias digitales
             únicas y funcionales. Con experiencia en HTML, CSS, JavaScript y
@@ -81,47 +86,47 @@
         </div>
       </div>
     </section>
-
-    
-
-    <section id="habilidades" class="container my-2 ">
-      <h2 class="animate__fadeInLeft">Habilidades Especificas</h2>
-      <div class="row m-5" >
+    <!--FAVICOM HABILIDADES-->
+    <section id="habilidades" class="container my-2">
+      <h2 class="animate__fadeInRight">Habilidades Especificas</h2>
+      <div class="row m-5">
         <div class="col-md-3 col-sm-6 skill-item" data-skill="HTML5">
           <i class="fab fa-html5 fa-5x" style="color: #ffd43b"></i>
-            
-            <h3>HTML5</h3>
+
+          <h3>HTML5</h3>
         </div>
         <div class="col-md-3 col-sm-6 skill-item" data-skill="CSS3">
-            <i class="fab fa-css3-alt fa-5x" style="color: #ffd43b"></i>
-            
-            <h3>CSS3</h3>
+          <i class="fab fa-css3-alt fa-5x" style="color: #ffd43b"></i>
+
+          <h3>CSS3</h3>
         </div>
         <div class="col-md-3 col-sm-6 skill-item" data-skill="JavaScript">
-            <i class="fab fa-js-square fa-5x" style="color: #ffd43b"></i>
-            <h3>JavaScript</h3>
+          <i class="fab fa-js-square fa-5x" style="color: #ffd43b"></i>
+          <h3>JavaScript</h3>
         </div>
         <div class="col-md-3 col-sm-6 skill-item" data-skill="Bootstrap">
-            <i class="fab fa-bootstrap fa-5x" style="color: #ffd43b"></i>
-            <h3>Bootstrap</h3>
+          <i class="fab fa-bootstrap fa-5x" style="color: #ffd43b"></i>
+          <h3>Bootstrap</h3>
         </div>
-    </div>
+      </div>
     </section>
 
-    <!--tarjetas-->
+    <!--CARD DE PROYECTOS PERSONALES-->
     <section id="projectos" class="container hidden-section">
       <h2 class="animate__fadeInLeft">Projectos personales</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100">
+          <div class="card h-100 animate__zoomIn">
             <img
               src="assets/img/foto camara.jpg"
-              class="card-img-top"
-              alt="..."
+              class="card-img-top "
+              alt="foto de tripie con camara"
             />
-            <div class="card-body">
-              <h5 class="card-title animate__fadeInLeft">Card title</h5>
-              <p class="card-text">
+            <div class="card-body shadow-sm">
+              <h5 class="card-title ">
+                Fotografia al aire libre
+              </h5>
+              <p class="card-text animate__zoomIn">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
                 praesentium odit quae sunt nisi assumenda, dolorum labore
                 deserunt nam suscipit. Atque necessitatibus, inventore
@@ -131,11 +136,17 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="assets/img/galaxia.jpg" class="card-img-top" alt="..." />
+          <div class="card h-100 animate__zoomIn">
+            <img
+              src="assets/img/galaxia.jpg"
+              class="card-img-top"
+              alt="foto de galaxia"
+            />
             <div class="card-body">
-              <h5 class="card-title animate__fadeInLeft">Card title</h5>
-              <p class="card-text">
+              <h5 class="card-title ">
+                Fotografia de Galaxias
+              </h5>
+              <p class="card-text animate__zoomIn">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Tenetur perferendis, assumenda nobis ad quam voluptatibus dolor
                 praesentium eius iusto iste minima! Magnam, incidunt dignissimos
@@ -145,11 +156,17 @@
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="assets/img/living.jpg" class="card-img-top" alt="..." />
+          <div class="card h-100 animate__zoomIn">
+            <img
+              src="assets/img/living.jpg"
+              class="card-img-top"
+              alt="foto de living"
+            />
             <div class="card-body">
-              <h5 class="card-title animate__fadeInLeft">Card title</h5>
-              <p class="card-text">
+              <h5 class="card-title ">
+                Fotografia de Interiores
+              </h5>
+              <p class="card-text animate__zoomIn">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Assumenda incidunt perspiciatis atque accusantium quas molestiae
                 id cumque possimus earum maxime debitis impedit, perferendis
@@ -160,39 +177,7 @@
         </div>
       </div>
     </section>
-
-    <section id="proyectos" class="container my-5 hidden-section">
-      <h2 class="animate__fadeInLeft">Proyectos Realizados</h2>
-      <div class="row hidden-content">
-        <div class="col-md-4 animate__zoomIn">
-          <h3>Proyecto 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quas
-            ullam optio, vel non quasi? Ab assumenda, natus aut fugiat numquam
-            ea atque quasi facilis maiores! Cum sequi nobis neque.
-          </p>
-        </div>
-        <div class="col-md-4 animate__zoomIn">
-          <h3>Proyecto 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-            similique cum voluptatem assumenda iure, debitis corrupti quas,
-            quos, sit explicabo vel impedit delectus? Eaque quae esse, maiores
-            amet tempore nostrum.
-          </p>
-        </div>
-        <div class="col-md-4 animate__zoomIn">
-          <h3>Proyecto 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            doloremque quo obcaecati distinctio temporibus eos sed cumque nam
-            eius magni laborum quisquam incidunt aut dolorum veritatis aperiam
-            minus, esse itaque?
-          </p>
-        </div>
-      </div>
-    </section>
-
+        
     <section id="contacto" class="container my-5">
       <h2 class="animate__fadeInLeft">Contactame</h2>
       <form>
@@ -219,16 +204,17 @@
           <textarea
             class="form-control animate__fadeInRight"
             id="mensaje"
-            rows="3"
+            rows="1"
             required
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-primary animate__pulse">
+        <button type="submit" class="btn btn-primary animate__pulse mt-3">
           Enviar
         </button>
       </form>
     </section>
 
+    <!--FOOTER-->
     <footer class="container text-center my-5">
       <p class="animate__fadeIn">
         &copy; 2024 Yuri urzua Lebuy. Todos los derechos reservados.
