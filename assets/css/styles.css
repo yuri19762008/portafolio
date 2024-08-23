@@ -1,16 +1,13 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
-
-
 body {
-    font-family: sans-serif;
-    background-color: wheat;
-    color: #343a40;
-    overflow-x: hidden; /* Para evitar scroll horizontal en animaciones */
+    /*imgen de fondo unsplash*/
     background-image:url("https://unsplash.com/photos/dvnv9s0Kq9M/download?ixid=M3wxMjA3fDB8MXxhbGx8MTkzfHx8fHx8Mnx8MTcyNDM4MDk5MXw&force=true&w=2400");
-    
     background-size: cover;
     background-position: top;
+    font-family: sans-serif;
+    color: #343a40;
+    overflow-x: hidden; /* Para evitar scroll horizontal en animaciones */
     
 }
 
