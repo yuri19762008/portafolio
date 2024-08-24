@@ -37,8 +37,12 @@ form {
 }
 
 button{
-    color: white;
-    background-color: black;
+    color:cadetblue;
+    
+}
+
+.about_Me{
+    color: black;
 }
 
 .card-body{
