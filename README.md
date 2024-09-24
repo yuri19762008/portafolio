@@ -1,3 +1,3 @@
-# primer portafolio realizado 
+# Primer portafolio realizado 
 
-## en construccion 
+## En construccion 
