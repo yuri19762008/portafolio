@@ -1,1 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yuri Urzúa | Data Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+*{margin:0;padding:0;box-sizing:border-box}
+
+/* BASE */
+body{
+    font-family:'Inter',sans-serif;
+    background:#0b0f19;
+    color:#e5e7eb;
+    line-height:1.6;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(11,15,25,0.8);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.nav-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+nav a{
+    color:#e5e7eb;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:0.9rem;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:3.2rem;
+    line-height:1.2;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:1.1rem;
+    color:#9ca3af;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#38bdf8;
+    color:black;
+}
+
+.btn-secondary{
+    border:1px solid #334155;
+    color:#e5e7eb;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* SECTION */
+.section{
+    padding:80px 0;
+}
+
+.section h2{
+    font-size:1.8rem;
+    margin-bottom:20px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* CARD */
+.card{
+    background:#111827;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #1f2937;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#38bdf8;
+}
+
+/* TAGS */
+.tag{
+    display:inline-block;
+    background:#1f2937;
+    padding:5px 10px;
+    border-radius:6px;
+    font-size:0.8rem;
+    margin:5px 5px 0 0;
+}
+
+/* FOOTER */
+footer{
+    padding:40px 0;
+    text-align:center;
+    color:#6b7280;
+}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+    .hero h1{font-size:2.2rem}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+    <div class="container nav-inner">
+        <strong>Yuri.dev</strong>
+        <div>
+            <a href="#about">Sobre mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+    <div class="container">
+        <h1>
+            Construyo soluciones con <span>datos</span>  
+            que generan impacto real
+        </h1>
+
+```
+    <p>
+        Soy analista de datos especializado en Python, automatización y visualización.
+        Desarrollo herramientas que optimizan procesos y apoyan decisiones.
+    </p>
+
+    <div class="buttons">
+        <a href="https://github.com/yuri19762008" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-secondary">Contacto</a>
+    </div>
+</div>
+```
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>🚀 Sobre mí</h2>
+
+```
+    <p>
+        Trabajo en la intersección entre datos y operaciones reales.
+        No solo analizo información: construyo herramientas que automatizan procesos,
+        reducen errores y mejoran la eficiencia.
+    </p>
+</div>
+```
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2>📌 Proyectos destacados</h2>
+
+```
+    <div class="grid">
+
+        <div class="card">
+            <h3>📂 Comparador de Carpetas</h3>
+            <p>Aplicación para detectar diferencias entre archivos y automatizar validaciones.</p>
+
+            <div>
+                <span class="tag">Python</span>
+                <span class="tag">Streamlit</span>
+            </div>
+
+            <br>
+            <a href="#">Ver proyecto →</a>
+        </div>
+
+        <div class="card">
+            <h3>📊 Análisis de Ventas</h3>
+            <p>Dashboard con métricas clave y visualización de datos.</p>
+
+            <div>
+                <span class="tag">Pandas</span>
+                <span class="tag">Matplotlib</span>
+            </div>
+
+            <br>
+            <a href="#">Ver proyecto →</a>
+        </div>
+
+        <div class="card">
+            <h3>🤖 Modelo de Churn</h3>
+            <p>Predicción de cancelación de clientes con Machine Learning.</p>
+
+            <div>
+                <span class="tag">ML</span>
+                <span class="tag">Scikit-learn</span>
+            </div>
+
+            <br>
+            <a href="#">Ver proyecto →</a>
+        </div>
+
+    </div>
+</div>
+```
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>📫 Contacto</h2>
+
+```
+    <p>
+        Puedes ver más de mi trabajo en GitHub:
+    </p>
+
+    <br>
+
+    <a href="https://github.com/yuri19762008" class="btn btn-primary">
+        Ir a mi GitHub
+    </a>
+</div>
+```
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 Yuri Urzúa — Data Analyst Portfolio
+</footer>
+
+</body>
+</html>
 
